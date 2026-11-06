@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | 求职简历</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif;}
+        body{background-color:#f5f7fa;color:#333;line-height:1.7;}
+        .container{max-width:1000px;margin:0 auto;padding:20px;}
+        header{background:#2c5282;color:#fff;padding:40px 20px;border-radius:12px;margin-bottom:24px;}
+        .header-wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;}
+        .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #fff;}
+        .info h1{font-size:28px;margin-bottom:6px;}
+        .info p{opacity:0.9;font-size:16px;}
+        .contact{margin-top:12px;display:flex;flex-wrap:wrap;gap:14px;font-size:14px;}
+        .contact a{color:#fff;text-decoration:none;background:rgba(255,255,255,0.2);padding:4px 10px;border-radius:6px;}
+        .contact a:hover{background:rgba(255,255,255,0.35);}
+
+        .card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 10px #00000010;}
+        .card h2{color:#2c5282;border-left:4px solid #2c5282;padding-left:12px;margin-bottom:16px;font-size:20px;}
+        .item{margin-bottom:16px;}
+        .item-title{font-weight:bold;font-size:17px;}
+        .item-sub{color:#666;font-size:14px;margin-bottom:6px;}
+        .skill-tag{display:inline-block;background:#edf2f7;color:#2c5282;padding:4px 10px;border-radius:20px;margin:4px;font-size:14px;}
+        .project{border:1px solid #e2e8f0;border-radius:8px;padding:16px;margin-bottom:12px;}
+        .project h3{font-size:17px;margin-bottom:6px;}
+        .project p{color:#555;font-size:15px;}
+        .project a{color:#2c5282;text-decoration:none;}
+        .project a:hover{text-decoration:underline;}
+
+        footer{text-align:center;color:#777;font-size:14px;padding:20px;}
+        @media (max-width:640px){
+            .header-wrap{justify-content:center;text-align:center;}
+            .contact{justify-content:center;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息区 -->
+        <header>
+            <div class="header-wrap">
+                <img class="avatar" src="头像链接" alt="个人头像">
+                <div class="info">
+                    <h1>你的姓名</h1>
+                    <p>智能建造与智慧交通 | 南华大学 | 本科应届生</p>
+                    <div class="contact">
+                        <a href="mailto:xxx@qq.com">📩 邮箱</a>
+                        <a href="tel:138XXXX1234">📱 电话</a>
+                        <a href="https://github.com/xxx">💻 GitHub</a>
+                        <a href="简历PDF链接">📄 下载简历</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 个人简介 -->
+        <section class="card">
+            <h2>个人简介</h2>
+            <p>
+                南华大学智能建造与智慧交通专业本科生，学习土木工程、BIM、数字化建造相关知识；担任班级团支书，具备良好沟通协调、文档撰写、团队协作能力。积极参与学科竞赛、创新创业项目，做事踏实细心，持续学习数字化建造、智慧交通相关技术，希望在智能建造、工程数字化、BIM方向深耕。
+            </p>
+        </section>
+
+        <!-- 教育经历 -->
+        <section class="card">
+            <h2>教育经历</h2>
+            <div class="item">
+                <div class="item-title">南华大学 | 智能建造与智慧交通 | 本科</div>
+                <div class="item-sub">2025.09 - 2029.06（按需修改）</div>
+                <p>主修课程：土木工程制图、BIM技术、工程测量、结构力学、Python基础、交通工程、工程造价</p>
+            </div>
+        </section>
+
+        <!-- 项目/竞赛经历（求职重点） -->
+        <section class="card">
+            <h2>项目 & 竞赛经历</h2>
+            <div class="project">
+                <h3>项目名称：XXX BIM建模/智慧交通相关项目</h3>
+                <p>时间：XXXX.XX - XXXX.XX<br>
+                职责：负责模型搭建、图纸整理、报告撰写、小组协调；使用Revit/广联达等工具完成建模，输出成果文档。<br>
+                成果：获得XX奖项 / 完成模型交付 / 形成创新方案。
+                <a href="项目链接">查看项目详情</a></p>
+            </div>
+            <div class="project">
+                <h3>创新创业大赛 / 结构设计大赛</h3>
+                <p>时间：XXXX.XX - XXXX.XX<br>
+                职责：方案构思、PPT撰写、答辩准备、团队分工协调。</p>
+            </div>
+        </section>
+
+        <!-- 技能清单 -->
+        <section class="card">
+            <h2>专业技能</h2>
+            <div>
+                <span class="skill-tag">Revit BIM建模</span>
+                <span class="skill-tag">广联达</span>
+                <span class="skill-tag">CAD</span>
+                <span class="skill-tag">Python基础</span>
+                <span class="skill-tag">Office三件套</span>
+                <span class="skill-tag">PPT汇报</span>
+                <span class="skill-tag">文档撰写</span>
+                <span class="skill-tag">团队统筹</span>
+            </div>
+        </section>
+
+        <!-- 学生工作 -->
+        <section class="card">
+            <h2>学生工作</h2>
+            <div class="item">
+                <div class="item-title">班级团支书</div>
+                <div class="item-sub">2025.09 - 至今</div>
+                <p>负责团务工作、推优入党、主题团日组织、材料整理、对接学院老师，锻炼组织协调、公文写作、沟通能力。</p>
+            </div>
+        </section>
+
+        <!-- 证书荣誉 -->
+        <section class="card">
+            <h2>证书 & 荣誉</h2>
+            <ul style="padding-left:20px;">
+                <li>大学英语四级证书</li>
+                <li>校级奖学金 / 优秀团干部</li>
+                <li>其他竞赛证书、培训证书</li>
+            </ul>
+        </section>
+
+        <footer>
+            © 2026 你的姓名 | 求职个人主页
+        </footer>
+    </div>
+</body>
+</html>
